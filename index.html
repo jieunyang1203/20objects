@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Objects That Define Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="connections-canvas"></canvas>
+        <div id="network-container">
+            <div class="center-node" id="center">
+                <span class="center-name">jieun yang</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <h1>20 Objects That Define Me</h1>
+        <div class="subtitle">An Identity Network</div>
+    </div>
+
+    <div class="controls">
+        <button class="btn active" id="btn-network" onclick="networkView()">Network</button>
+        <button class="btn" id="btn-importance" onclick="importanceView()">Importance</button>
+    </div>
+
+    <div class="status-panel">
+        <div class="status-content">
+            <div id="status-text"></div>
+            <div id="status-details" class="status-details"></div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="detail-modal" id="modal">
+        <span class="modal-close" onclick="closeModal()">×</span>
+        <div class="modal-content">
+            <div class="modal-image" id="modal-image"></div>
+            <div class="modal-text">
+                <div class="modal-title" id="modal-title">Object Name</div>
+                <div class="modal-meta" id="modal-meta">Meta Info</div>
+                <div class="modal-desc" id="modal-desc">Description</div>
+                <div class="modal-connections" id="modal-connections">
+                    <div class="connections-title">Connected to:</div>
+                    <div class="connections-list" id="connections-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
